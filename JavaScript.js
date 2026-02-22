@@ -63,8 +63,21 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------
 
-// 3.
+// 3.How can Page Loading time be reduced ?
 
+// Optimize images: Use WebP format (smaller than JPG/PNG). 
+
+// Minimize HTTP requests: Combine CSS/JS files.
+
+// Browser caching: Store static assets locally. 
+
+// CDN (Content Delivery Network): Serve from geographically closer servers nearest location. 
+
+// Lazy loading: Load images/videos only when needed (Pinterest example).
+
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.
 
 
 
