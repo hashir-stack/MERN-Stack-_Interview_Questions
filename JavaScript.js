@@ -28,6 +28,44 @@
 
 // -----------------------------------------------------------------------------------------------------------------------------------
 
+//2. What is the difference between localStorage and sessionStorage ?
+
+//  Both localStorage and sessionStorage are part of the Web Storage API in JavaScript, used to store data in the browser. They look similar but differ in scope and lifespan.
+
+// LocalStorage
+// - A type of web storage that allows you to store data in the browser with no expiration date.
+// - The data remains available even after the browser is closed and reopened, until it is explicitly deleted by the user or the application.
+// - It is shared across all tabs and windows of the same origin (domain + protocol + port).
+
+
+// SessionStorage
+// - A type of web storage that stores data only for the duration of the page session.
+// - The data is cleared automatically when the tab or window is closed.
+// - It is unique to each tab/window and is not shared across different tabs, even if they are from the same origin
+
+
+
+//   Feature                               	LocalStorage	                                        SessionStorage
+//   Persistence   	                 Permanent (survives browser/tab close)  	            Temporary (cleared when tab closes) 
+//   Scope	                         Shared across tabs (same origin)	                    Tab-specific 
+//   Examples	                     Amazon cart (persists login) 	                        LinkedIn job forms (clears on reload) 
+//   Storage Limit                   Typically ~5–10 MB depending on the browser.           Same limit (~5–10 MB).
+// API Methods                       Both use the same methods:                             Same methods as localStorage.
+//                                   setItem(), getItem(), removeItem(), clear().
+
+// localStorage example
+// localStorage.setItem("theme", "dark");
+// console.log(localStorage.getItem("theme")); // "dark"
+
+// sessionStorage example
+// sessionStorage.setItem("sessionUser", "Hashir");
+// console.log(sessionStorage.getItem("sessionUser")); // "Hashir"
+
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.
+
+
 
 
 
