@@ -77,7 +77,41 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------
 
-// 4.
+// 4.What is the difference between SOAP and REST ?
+
+// 🧩 SOAP (Simple Object Access Protocol)
+// - Nature: A strict protocol with rules defined by W3C.
+// - Message Format: Always XML, wrapped in an “envelope” that defines the message structure.
+// - Transport: Can use HTTP, SMTP, TCP, etc.
+// - Contracts: Uses WSDL (Web Services Description Language) to describe what the service does and how to call it.
+// - Security: Built-in standards like WS-Security for authentication, encryption, and message integrity.
+// - State: Can be stateful (maintains session info).
+// - Overhead: Heavy because of XML parsing and strict rules.
+
+// 👉 Think of SOAP like a formal courier service: every package must be wrapped in a specific envelope, stamped, and follow strict delivery rules.
+
+// 🌐 REST (Representational State Transfer)
+// - Nature: An architectural style, not a protocol.
+// - Message Format: Flexible — JSON is most common, but XML, HTML, or plain text can be used.
+// - Transport: Primarily HTTP, using standard methods:
+// - GET → retrieve data
+// - POST → create data
+// - PUT/PATCH → update data
+// - DELETE → remove data
+// - Contracts: No WSDL; relies on documentation or conventions.
+// - Security: Uses HTTPS, OAuth, JWT, etc.
+// - State: Stateless — each request is independent.
+// - Overhead: Lightweight, faster, easier to scale.
+
+// 👉 Think of REST like a casual conversation: you ask directly (“Give me this data”), and the server responds simply, usually in JSON.
+
+// 4. SOAP vs REST
+//   Feature	                                      SOAP	                                                REST
+//  Format	                                      Complex XML 	                                       Simple JSON 
+//  State	                                      Stateful	                                           Stateless 
+//  Rules	                                      Strict protocol	                                   Uses HTTP methods (GET/POST) 
+//  Use Case	                                  Complex, secure apps	                               Speed, scalability 
+
 
 
 
