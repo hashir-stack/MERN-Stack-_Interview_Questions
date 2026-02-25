@@ -115,6 +115,24 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// 5. What is the difference between GraphQL and REST ?
+// - REST (Representational State Transfer)
+// REST is an architectural style for designing APIs. It uses HTTP methods (GET, POST, PUT, DELETE) to interact with resources identified by URLs. Each endpoint returns a fixed data structure defined by the server.
+
+// - GraphQL
+// GraphQL is a query language for APIs, developed by Facebook. It allows clients to specify exactly what data they need, and the server responds with that precise structure. It’s schema-driven and supports querying multiple related resources in a single request.
+
+// GraphQL: Single endpoint, client specifies exact data (no over/under-fetching).  
+
+// REST: Multiple endpoints, server defines response (often over-fetching). 
+
+// Key Advantage: GraphQL reduces over-fetching by tailoring queries
+
+// Think of it this way: REST is like ordering a fixed meal from a menu, while GraphQL is like building your own plate at a buffet — you choose exactly what you want.
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
