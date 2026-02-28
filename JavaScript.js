@@ -132,6 +132,53 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// 6.What are the various data types present in JavaScript ?
+
+// Mutable -> Value can be change
+// Immutable -> Value can't be change
+
+// Primitive (Immutable): Number, BigInt, String, Boolean, Undefined, Null, Symbol 
+// Non-Primitive (Mutable): Object (key-value pairs)
+
+// 🔹 Primitive Data Types
+
+// These are immutable and stored directly in memory.
+
+// - Number: Represents both integers and floating-point numbers.
+// Example: let age = 25; let pi = 3.14;
+
+// - BigInt: Used for very large integers beyond the safe limit of Number.
+// Example: let big = 1234567890123456789012345n;
+
+// - String: Represents text enclosed in quotes.
+// Example: let name = "Hashir";
+
+// - Boolean: Represents logical values true or false.
+// Example: let isActive = true;
+
+// - Undefined: A variable declared but not assigned any value.
+// Example: let x;
+
+// - Null: Represents an intentional absence of value.
+// Example: let y = null;
+
+// - Symbol: A unique and immutable identifier, often used as object keys.
+// Example: const id = Symbol("id");
+
+
+// 🔹 Non-Primitive (Reference) Data Type
+// These are mutable and stored as references.
+// - Object: A collection of key-value pairs.
+// Example:
+// const person = { name: "Hashir", age: 25 };
+
+
+// Objects can further include:
+// - Arrays: Ordered lists of values → let arr = [1, 2, 3];
+// - Functions: Callable objects → function greet() { return "Hello"; }
+// - Dates, RegExp, Maps, Sets, etc.
+
+
 
 
 
