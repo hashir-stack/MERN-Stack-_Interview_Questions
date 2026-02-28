@@ -200,6 +200,60 @@
 // - Animations
 // - Event handling (e.g., button clicks)
 
+// --------------------------------------------------------------------------------------------------------------------------------
+
+// 8. What is the this keyword in JavaScript ?
+
+// The this keyword in JavaScript refers to the execution context — essentially, the object that is currently calling or owning the function. Its value is not fixed but depends on how a function is invoked at runtime, not where it is defined.
+
+// The this keyword in JavaScript just means:
+// 👉 “Who is calling me right now?”
+// Think of it like a pronoun in English. When you say “I”, it depends on who is speaking. Similarly, this depends on where and how the code is running.
+
+// Simple Examples
+
+// 1- Inside an object method
+
+// const person = {
+//   name: "Hashir",
+//   sayName() {
+//     console.log(this.name);
+//   }
+// };
+// person.sayName(); // "Hashir"
+// Here, this = the person object (because it’s the one calling the function).
+
+// 2- In a normal function
+// function show() {
+//   console.log(this);
+// }
+// show();
+// - In browsers (non-strict mode), this = window (the global object).
+// - In strict mode, this = undefined.
+
+// 3- In an event handler
+// document.querySelector("button").onclick = function() {
+//   console.log(this); // the button itself
+// };
+// Here, this = the button that was clicked.
+
+// 4- Arrow functions
+// const obj = {
+//   name: "Hashir",
+//   arrow: () => console.log(this.name)
+// };
+// obj.arrow(); // undefined
+// Arrow functions don’t have their own this. They “borrow” it from the place where they were created.
+
+// 🎯 Super Simple Rule
+// - this = the object that is currently using the function.
+// - If no object is using it → it usually points to the global object (or undefined in strict mode).
+// - Arrow functions don’t change this; they just use whatever this was outside them.
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
