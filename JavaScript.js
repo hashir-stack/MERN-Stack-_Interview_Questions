@@ -178,7 +178,27 @@
 // - Functions: Callable objects → function greet() { return "Hello"; }
 // - Dates, RegExp, Maps, Sets, etc.
 
+// ----------------------------------------------------------------------------------------------------------------------------
 
+// 7. What is DOM ?
+
+// The DOM (Document Object Model) is a programming interface that represents the structure of a web document (like HTML or XML) in memory. Think of it as a tree-like model where every element, attribute, and piece of text in a webpage is a node in that tree.
+
+
+// 🌳 Structure of the DOM
+// - Document Node → The root of the tree (represents the whole page).
+// - Element Nodes → HTML tags like <div>, <p>, <h1>.
+// - Attribute Nodes → Attributes inside elements, e.g., id="demo".
+// - Text Nodes → The actual text inside elements.
+
+// 🔹 Why DOM Matters ?
+// - It connects JavaScript to the webpage.
+// - Allows developers to access, modify, and control content, structure, and styles dynamically.
+// - Enables interactive features like:
+// - Updating text/images in real-time
+// - Form validation
+// - Animations
+// - Event handling (e.g., button clicks)
 
 
 
