@@ -271,6 +271,29 @@
 
 // -------------------------------------------------------------------------------------------------------------------
 
+// What is use strict in javascript?
+// - Helps write cleaner, safer, and more optimized code.
+// - Prevents accidental globals and other common pitfalls.
+// - Encourages best practices by enforcing stricter rules.
+// 👉 In short: "use strict" is like turning on a safety mode in JavaScript—it catches mistakes that would otherwise slip by unnoticed.
+
+// In JavaScript, use strict is a directive introduced in ECMAScript 5 (ES5) that enables strict mode, which enforces a stricter set of rules for writing JavaScript code.
+
+// - Prevents use of undeclared variables
+// "use strict";
+// x = 10; // Error: x is not declared
+
+// - Disallows duplicate parameter names
+// function test(a, a) { } // Error in strict mode
+
+// --------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
