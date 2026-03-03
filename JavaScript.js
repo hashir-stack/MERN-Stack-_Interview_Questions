@@ -252,6 +252,26 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------
 
+// What is the difference between event bubbling and event capturing ?
+
+// Event Bubbling
+// Event bubbling is the process where an event starts at the target element (the one that was interacted with) and then propagates upward through its ancestors in the DOM tree.
+
+// - Example: If you click a <button> inside a <div>, the click event first runs on the <button>, then on the <div>, then on <body>, and so on until it reaches the document.
+
+// Event Capturing
+// Event capturing (also called trickling) is the opposite process: the event starts at the root of the DOM (like document) and propagates downward through ancestors until it reaches the target element.
+
+// - Example: With capturing enabled, when you click a <button> inside a <div>, the event first runs on document, then <body>, then <div>, and finally on the <button>.
+
+// Key Difference
+// - Bubbling: Target → Parent → Ancestors (bottom → up).
+// - Capturing: Ancestors → Parent → Target (top → down).
+// By default, JavaScript uses event bubbling, but you can enable capturing by passing { capture: true } in addEventListener.
+
+// -------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
