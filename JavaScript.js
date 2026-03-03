@@ -288,6 +288,17 @@
 
 // --------------------------------------------------------------------------------------------------------------------------
 
+// What is the difference between cookies and local storage ?
+
+// - Cookies: Small text files (usually up to 4 KB) stored on the client’s computer. They are automatically sent to the server with every HTTP request. Commonly used for session management, authentication, and tracking users behaviours.
+
+// - Local Storage: A client-side storage mechanism introduced with HTML5. It allows storing larger amounts of data (typically up to 5–10 MB) directly in the browser. Data persists even after the browser is closed, but it is not sent to the server automatically.
+
+// - Use cookies when you need to share data between client and server (like login sessions).
+// - Use local storage when you need to store larger amounts of data that only the client-side code will use (like app settings or cached content).
+
+// --------------------------------------------------------------------------------------------------------------------------
+
 
 
 
