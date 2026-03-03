@@ -299,6 +299,17 @@
 
 // --------------------------------------------------------------------------------------------------------------------------
 
+// How can you prevent a bot from scraping your publicly accessiable api?
+
+// Authentication & API Keys- Require users to authenticate before accessing endpoints.
+// Rate Limiting-Restrict the number of requests per IP/user per time window.
+// CAPTCHAs / Human Verification- Add CAPTCHAs for sensitive endpoints or signup flows
+// Obfuscate endpoints: Complex URLs 
+// Honeypots: Hidden fields bots fills/-Hide some fill so user can't see but the bot can see this will trap the bot to identify.
+
+// --------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
