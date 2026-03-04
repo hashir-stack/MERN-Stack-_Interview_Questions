@@ -22,6 +22,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------------------
 
+// What is useState Hook in React ?
+
+// 👉 One-line definition (interview style):
+// useState is a React Hook that lets functional components store and update stateful values, triggering re-renders when the state changes.
+// It gives you a way to store values that can change over time (like user input, counters, or toggles) and automatically re-render the component when those values update.
+
+// 🔑 How It Works
+// - You call useState(initialValue) inside your component.
+// - It returns two things:
+// - The current state value.
+// - A function to update that value.
+
+// import React, { useState } from "react";
+
+// function Counter() {
+//   // count = current state value
+//   // setCount = function to update state
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <p>Count: {count}</p>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </div>
+//   );
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
