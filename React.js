@@ -80,7 +80,41 @@
 // }
 
 // -------------------------------------------------------------------------------------------------------------------------------
+//  What is Context Hook in React ?
 
+// useContext is a React Hook that lets components consume values from Context directly, eliminating the need for prop drilling.
+
+// useContext is a React Hook that allows functional components to access values from a Context directly, without needing to pass props manually through every level of the component tree.
+// It’s part of React’s Context API, which is designed to share data globally across components (like themes, authentication, or user preferences) and avoid prop drilling.
+
+
+// 🔑 How It Works
+// - You create a context using React.createContext().
+// - Wrap your components with a Provider that supplies a value.
+// - Inside any child component, call useContext(MyContext) to read that value.
+
+// import React, { createContext, useContext } from "react";
+
+// const ThemeContext = createContext("light");
+
+// function App() {
+//   return (
+//     <ThemeContext.Provider value="dark">
+//       <Toolbar />
+//     </ThemeContext.Provider>
+//   );
+// }
+
+// function Toolbar() {
+//   const theme = useContext(ThemeContext); // Access context value
+//   return <p>Current theme: {theme}</p>;
+// }
+
+// - ThemeContext provides the value "dark".
+// - Toolbar uses useContext(ThemeContext) to read it directly.
+// - No need to pass theme as a prop through multiple components.
+
+// --------------------------------------------------------------------------------------------------------------------------
 
 
 
