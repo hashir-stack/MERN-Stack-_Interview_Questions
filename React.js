@@ -51,6 +51,38 @@
 
 // ------------------------------------------------------------------------------------------------------------------------
 
+// What is useEffect hook in React ?
+
+// useEffect is a React Hook that lets you perform side effects in functional components.
+// Side effects are actions that happen outside the normal rendering process, such as fetching data, setting up event listeners, updating the DOM directly, or starting timers.
+
+// 🔑 How It Works
+// - useEffect takes a function (effect) that runs after the component renders.
+// - It can also take a dependency array to control when the effect runs.
+// - You can return a cleanup function to remove subscriptions, timers, or listeners when the component unmounts.
+
+// import React, { useState, useEffect } from "react";
+
+// function Timer() {
+//   const [count, setCount] = useState(0);
+
+//   // Runs after every render
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCount((prev) => prev + 1);
+//     }, 1000);
+
+//     // Cleanup when component unmounts
+//     return () => clearInterval(interval);
+//   }, []); // Empty array → runs only once after first render
+
+//   return <h1>Seconds passed: {count}</h1>;
+// }
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
