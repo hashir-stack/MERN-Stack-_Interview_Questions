@@ -126,6 +126,26 @@
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
+// What is Context API , and how is it different from props ?
+
+// The Context API in React is a built-in feature that allows you to share data across multiple components without manually passing props at every level. Props, on the other hand, are used to pass data directly from a parent to a child component. The key difference is that Context avoids “prop drilling” (passing props through many layers), making global state management easier.
+
+// Props
+// - Definition: Props (short for properties) are read-only attributes used to pass data from a parent component to a child component.
+// - Key Point: They are immutable and flow one-way (top-down).
+// - Use Case: Best for simple, localized data passing (e.g., sending a button label or user info to a child component).
+
+// Context API
+// - Definition: The Context API is a React feature that provides a way to share values (like state, themes, or authentication) across the entire component tree without explicitly passing props at each level.
+// - Key Point: It creates a global-like state accessible by any component that consumes the context.
+// - Use Case: Best for data needed by many components (e.g., theme settings, user authentication, language preferences).
+
+// Summary
+// - Use Props when data is specific to a component and passed directly.
+// - Use Context API when data is global and needed by multiple components at different levels
+
+// ------------------------------------------------------------------------------------------------------------------------
+
 
 
 
