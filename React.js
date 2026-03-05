@@ -116,6 +116,15 @@
 
 // --------------------------------------------------------------------------------------------------------------------------
 
+// Explain the component lifecycle in React ?
+
+// In React, every component goes through a lifecycle with three main phases: Mounting, Updating, and Unmounting. These phases allow you to run code at specific points, such as initializing state, responding to prop changes, or cleaning up resources.
+
+// - Mounting → Component is created and added to DOM.
+// - Updating → Component re-renders when state/props change.
+// - Unmounting → Component is removed and cleanup happens.
+
+// -----------------------------------------------------------------------------------------------------------------------------
 
 
 
