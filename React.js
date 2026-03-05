@@ -146,6 +146,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------------
 
+// How can you optimize performance within a react application ?
+
+// In React, I optimize performance by preventing unnecessary re-renders with memoization (React.memo, useMemo, useCallback), splitting code with lazy loading, and virtualizing large lists. I also debounce frequent events, optimize assets like images, and leverage React 18 features such as concurrent rendering to keep the UI responsive. The goal is to balance readability with performance, applying optimizations where they make the biggest impact."
+
+// - Use React.memo to prevent functional components from re-rendering when props haven’t changed.
+
+// - Use useCallback to memoize functions so they aren’t recreated on every render.
+
+// - Use useMemo to cache expensive computations.
+
+// 👉 Example
+// const memoizedValue = useMemo(() => expensiveCalculation(data), [data]);
+
+// - Use lazy loading for images.
+// - Compress and optimize images before serving.
+
+// - Use react-window or react-virtualized for rendering large lists efficiently (only render visible items).
+// - Always provide unique keys for list items to help React track changes.
+
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
