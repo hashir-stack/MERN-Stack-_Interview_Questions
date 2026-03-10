@@ -167,6 +167,47 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------
 
+// What do you mean by Higher Order Component in React ?
+
+// An HOC is a function that takes a component and returns a new component.
+// Think of an HOC like a wrapper. If a regular component transforms props into UI, an HOC transforms a component into another component with extra "powers" or data.
+
+// Why Use Them?
+
+// Authentication: Checking if a user is logged in before showing a page.
+
+// Logging: Tracking when certain components mount or user interactions occur.
+
+// Data Fetching: Wrapping components to provide them with data from an API.
+
+// Styling/Theming: Injecting specific theme props into a component.
+
+// A Practical Example
+
+// Imagine you have several components that need to know if a user is "Authorized." Instead of writing the check inside every single component, you create an HOC:
+
+
+// // This is the Higher-Order Component
+// function withAuthorization(WrappedComponent) {
+//   return function(props) {
+//     const isAuthorized = checkUserStatus(); // Hypothetical logic
+
+//     if (!isAuthorized) {
+//       return <p>You are not allowed to see this!</p>;
+//     }
+
+//     // Pass the original props through to the wrapped component
+//     return <WrappedComponent {...props} />;
+//   };
+// }
+
+// Usage
+//const SecureProfile = withAuthorization(UserProfile);
+
+// Not much more used after the introduction of React Hooks
+
+// -----------------------------------------------------------------------------------------------------------------------
+
 
 
 
