@@ -208,7 +208,30 @@
 
 // -----------------------------------------------------------------------------------------------------------------------
 
+// What is server side rendering and how is it beneficial ?
 
+// Server-Side Rendering (SSR) is a technique where the server generates the full HTML of a webpage before sending it to the browser. It’s beneficial because it improves initial load speed, enhances SEO, and provides a better user experience compared to client-side rendering (CSR).
+
+// - Definition: SSR means the server processes the request, executes the necessary logic, and sends a fully rendered HTML page to the browser.
+
+
+// 1. Performance & Faster Initial Load
+// - Pages load quicker because the browser receives ready-to-render HTML.
+// - Especially useful for users on slow internet connections or mobile devices.
+// - Reduces Time to First Byte (TTFB) and improves Core Web Vitals.
+
+// 2. SEO Advantages
+// - Search engines like Google can easily crawl and index SSR pages since they arrive with complete HTML content.
+// - CSR pages sometimes struggle with SEO because crawlers may not execute JavaScript properly.
+
+// 3. Improved User Experience
+// - Users see meaningful content faster, reducing bounce rates.
+// - SSR helps with accessibility and usability across devices.
+
+// 4. Better Social Media Sharing
+// - Platforms like Facebook, Twitter, and LinkedIn rely on meta tags. SSR ensures these tags are present in the HTML, improving link previews.
+
+// --------------------------------------------------------------------------------------------------------------------------------
 
 
 
