@@ -103,6 +103,14 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------
 
+// How does Node.js handle child thread ?
+
+// Node.js itself runs on one thread, but when it needs to do heavy work, it creates helpers (child processes or worker threads) to do that work in parallel. This way, the main thread stays free to handle incoming requests quickly.
+
+// Node.js is single-threaded for JavaScript execution, but it can handle heavy or parallel tasks using child processes or worker threads. These allow Node.js to run separate programs or threads alongside the main event loop, preventing blocking and enabling use of multiple CPU cores.
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
