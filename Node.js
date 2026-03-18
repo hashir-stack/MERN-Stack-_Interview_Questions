@@ -36,6 +36,7 @@
 // console.log("Reading file...");
 
 // - Here, the file read doesn’t block the program; “Reading file…” prints immediately.
+
 // - Benefits:
 // - Prevents bottlenecks in I/O-heavy applications.
 // - Keeps applications responsive under heavy load.
@@ -50,8 +51,41 @@
 
 // - They often work together: for example, Node.js uses non-blocking I/O with an asynchronous event loop, making it highly scalable for web servers.
 
-
 // ------------------------------------------------------------------------------------------------------------------------------------
+
+// What is the Event Loop in Node.js ?
+
+// - Node.js runs on one main thread.
+// - The event loop is a system that lets Node.js pause long tasks, do other work in the meantime, and then come back when those tasks are ready.
+// - This is why Node.js feels fast and efficient, even though it’s single-threaded.
+
+// Example:-
+// console.log("Start");
+
+// setTimeout(() => {
+//   console.log("After 2 seconds");
+// }, 2000);
+
+// console.log("End");
+
+// Output:-
+// Start
+// End
+// After 2 seconds
+
+// 👉 Node.js doesn’t wait for 2 seconds doing nothing. It moves on, prints “End,” and later comes back to print “After 2 seconds.”
+
+// The Event Loop in Node.js is the core mechanism that enables non-blocking, asynchronous operations on a single thread, allowing Node.js to handle thousands of concurrent tasks efficiently. It delegates heavy operations (like I/O, timers, and network requests) to the system or the libuv library, then schedules callbacks in a structured cycle.
+
+// So in simple words:
+// The event loop is Node.js’s way of juggling tasks so it can do many things at once without stopping, even though it only has one worker.
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
