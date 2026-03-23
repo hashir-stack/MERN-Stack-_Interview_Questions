@@ -217,6 +217,26 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// What is the purpose of package.json ?
+
+// The purpose of package.json in Node.js is to act as the “manifest” of your project — it defines metadata (name, version, author), lists dependencies, and specifies scripts so that npm and Node.js can manage, run, and share your project consistently.
+
+// ✅ In short: package.json is the backbone of any Node.js project. It tells npm what your project is, what it needs, and how to run it. Without it, dependency management and project automation would be chaotic.
+
+// 🔹 Key Roles of package.json
+// - Project Metadata
+// - Contains name, version, description, author, license.
+// - Helps identify the project when shared or published.
+
+// - Dependency Management
+// - Lists all libraries/modules your project needs under:
+// - "dependencies" → required for production.
+// - "devDependencies" → required only for development/testing.
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
