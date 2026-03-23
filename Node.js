@@ -184,6 +184,40 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// How do Promises improve callback handling ?
+
+// A Promise is an object in JavaScript that represents the eventual completion (success) or failure (error) of an asynchronous operation.
+
+// 👉 Instead of nesting callbacks, Promises let you chain operations with .then() and handle errors with .catch().
+
+// Async/await is built on top of Promises. It allows you to write asynchronous code that looks synchronous, making it much easier to read and understand.
+
+// - Callback hell = messy nested async functions.
+// - Promise = cleaner way to handle async tasks with chaining.
+// - Async/await = the easiest way to write async code, looks like step-by-step instructions./
+
+// Promise Chain
+// doTask1()
+//   .then(result1 => doTask2(result1))
+//   .then(result2 => doTask3(result2))
+//   .then(result3 => console.log("Final:", result3))
+//   .catch(err => console.error(err));
+
+//   Async/Await (Even Easier)
+//   async function runTasks() {
+//   try {
+//     const result1 = await doTask1();
+//     const result2 = await doTask2(result1);
+//     const result3 = await doTask3(result2);
+//     console.log("Final:", result3);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
