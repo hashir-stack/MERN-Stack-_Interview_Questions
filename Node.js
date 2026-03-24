@@ -258,10 +258,31 @@
 // nextTick
 // setImmediate
 
-// - nextTick happens before I/O and before setImmediate.(When the current task is over then it will execute the task)
-// - setImmediate happens after I/O, in the next loop.(When every task is over then it will execute the task)
+// - nextTick happens before I/O and before setImmediate.(When the current task is over then it will execute the task).
+// Use process.nextTick() when you need to run code immediately after the current operation ,with higher priority than I/O tasks
+
+// - setImmediate happens after I/O, in the next loop.(When every task is over then it will execute the task).
+// Use setImmediate() when you want to defer the execution of code until the current I/O operations are complete and you can wait for the next event loop cycle.
 
 //---------------------------------------------------------------------------------------------------------------------------------
+
+// How can you handle errors in Node.js ?
+
+// Error handling in Node.js is important to ensure that your application run smoothly and can recover from unexpected issues.
+
+// “In Node.js, errors are handled in three main ways:
+
+// - For synchronous code, I use try...catch.
+
+// - For asynchronous code with callbacks, I follow the error‑first pattern (function(err, data)), always checking err.
+
+// - For Promises or async/await, I handle errors with .catch() or try...catch inside async functions.
+
+// Additionally, I make sure to log errors, use centralized error handling in frameworks like Express, and avoid relying solely on global handlers like uncaughtException or unhandledRejection since they’re more for logging than recovery.”
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
