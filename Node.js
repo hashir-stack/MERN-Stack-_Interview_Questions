@@ -235,6 +235,34 @@
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
+// What is the difference between process.nextTick() and setImmediate() ?
+
+// - process.nextTick() → Runs right after the current code finishes, before the event loop continues.
+
+// - setImmediate() → Runs on the next round of the event loop, after I/O events are handled. (I/O)
+
+// - nextTick() = “Do it immediately after this line of code.”
+
+// - setImmediate() = “Do it a little later, when the event loop cycles again.”
+
+// Example:
+
+// console.log("start");
+// process.nextTick(() => console.log("nextTick"));
+// setImmediate(() => console.log("setImmediate"));
+// console.log("end");
+
+// Output:-
+// start
+// end
+// nextTick
+// setImmediate
+
+// - nextTick happens before I/O and before setImmediate.(When the current task is over then it will execute the task)
+// - setImmediate happens after I/O, in the next loop.(When every task is over then it will execute the task)
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
