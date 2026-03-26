@@ -48,3 +48,56 @@
 // });
 
 // ---------------------------------------------------------------------------------------------------------------------------
+
+// What are the middleware functions in Express.js and how do they work ?
+
+// “Middleware in Express.js are functions that run during the request–response cycle. They can modify req/res, execute code, end the cycle, or call next() to pass control. Express supports app-level, router-level, built-in, third-party, and error-handling middleware.”
+
+//  How Middleware Works
+// - Definition: A middleware function has access to req, res, and the next function.
+
+// - Execution Flow:
+
+// - Request comes in.
+// - Middleware runs (can modify request/response).
+// - If not finished, it calls next() to hand off to the next middleware.
+// - Eventually, a route handler or error handler ends the cycle.
+
+// - Key Rule: If middleware doesn’t end the cycle, it must call next() — otherwise the request hangs.
+
+// Types of Middleware
+
+// 1- Application-level middleware
+// - Bound to the app using app.use() or app.METHOD().
+// app.use((req, res, next) => {
+//   console.log('Time:', Date.now());
+//   next();
+// });
+
+// 2- Router-level middleware
+// - Works with express.Router().
+// const router = express.Router();
+// router.use((req, res, next) => {
+//   console.log('Router middleware');
+//   next();
+// });
+
+// 3- Built-in middleware
+// - Examples: express.json() (parse JSON body), express.static() (serve static files)
+
+// 4- Third-party middleware
+// - Popular ones include:
+// - body-parser → parse request body
+// - cookie-parser → parse cookies
+// - morgan → logging
+// - cors → enable cross-origin requests
+// - multer → handle file uploads
+
+// 5- Error-handling middleware
+// - Defined with four arguments (err, req, res, next)
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).send('Something broke!');
+// });
+
+// -----------------------------------------------------------------------------------------------------------------------------
