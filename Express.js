@@ -101,3 +101,25 @@
 // });
 
 // -----------------------------------------------------------------------------------------------------------------------------
+
+// How can you handle errors in an Express application?
+
+// “In an Express application, errors are handled using special middleware functions. A normal middleware has three arguments (req, res, next), but an error‑handling middleware has four (err, req, res, next). Whenever an error occurs, Express passes it to this middleware. Inside, I can log the error, send a proper response, or perform cleanup. For example:
+
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);        // Log the error
+//   res.status(500).json({           // Send response
+//     message: 'Something went wrong!',
+//     error: err.message
+//   });
+// });
+// ”
+
+// - Use try...catch in async/await functions and call next(err) to forward errors.
+// - Keep one centralized error‑handling middleware at the end of the middleware stack.
+// - Return meaningful status codes (e.g., 400 for bad requests, 404 for not found, 500 for server errors).
+// - Avoid exposing sensitive details in error responses
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
