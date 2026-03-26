@@ -27,3 +27,24 @@
 // This way, Express routes can be organized cleanly, support different HTTP methods, and scale easily with Router modules.
 
 // ------------------------------------------------------------------------------------------------------------------------------
+
+// What the difference between req.params ,req.body and req.query ?
+
+// - req.params holds route parameters defined in the URL path (e.g., /users/:id → req.params.id).
+
+// - req.query holds query string values from the URL (e.g., /search?name=hashir → req.query.name).(for sorting)
+
+// - req.body holds data sent in the request body, usually from POST/PUT requests, and requires middleware like express.json() or body-parser to parse it.”**
+
+// Example:-
+
+// app.get('/users/:id', (req, res) => {
+//   console.log(req.params.id);   // Path parameter
+//   console.log(req.query.sort);  // Query string
+// });
+
+// app.post('/users', (req, res) => {
+//   console.log(req.body.name);   // Body data
+// });
+
+// ---------------------------------------------------------------------------------------------------------------------------
