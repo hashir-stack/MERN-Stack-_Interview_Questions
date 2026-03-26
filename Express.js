@@ -123,3 +123,24 @@
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
+// What is the role of body parser in Express and how do you use them ?
+
+// The role of body‑parser in Express is to parse the incoming request body so we can access data sent by clients (like form submissions or JSON payloads). Without it, req.body would be undefined. In modern Express (v4.16+), body‑parser’s functionality is built into Express itself via express.json() and express.urlencoded(). We use them as middleware before defining routes.
+
+// const express = require('express');
+// const app = express();
+
+// // Parse JSON bodies
+// app.use(express.json());
+
+// // Parse URL-encoded bodies (form submissions)
+// app.use(express.urlencoded({ extended: true }));
+
+// app.post('/login', (req, res) => {
+//   console.log(req.body.username); // Access parsed data
+//   res.send('Login data received');
+// });
+
+// app.listen(3000, () => console.log('Server running'));
+
+// -----------------------------------------------------------------------------------------------------------------------------------
